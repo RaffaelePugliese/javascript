@@ -1,16 +1,10 @@
- function getLength (el){
-   return el
-}
-
-
 
  function nicknameMap(persons) {
-
-  let nicknames=persons.map(({name , age}) =>({[name] : age}) )
-//  console.log(nicknames)
- return nicknames
+  for (let i = 0; i <persons.length; i++) {
+    console.log(persons[i].name + '-'+persons[i].age)
+    
+  }
  }
-
 const persons = [
   { name: 'Paul', age: 16 },
   { name: 'George', age: 17 },

@@ -2,29 +2,29 @@ class Person {
   firstName = '';
   lastName = '';
   _age = 0;
-  constructor(firstName, lastName, _age) {
+  constructor(_firstName, _lastName, _age) {
 
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this._age = _age
+    this._firstName = firstName;
+    this._lastName = lastName;
+    this._age = age
   };
 
-  set firstName(firstName) {
-    if (typeof(firstName) !== "String") {
-      this.firstName = String(newName)
+  set firstName(_firstName) {
+    if (typeof(_firstName) !== "String") {
+      this._firstName = String(newName)
     }else{
-      this.firstName=firstName;
+      this._firstName=firstName;
     }
   };
   get firstName() {
     return this.firstName;
   };
 
-  set lastName(lastName) {
-    if (typeof(lastName) !== "String") {
-      this.lastName = String(this.lastName)
+  set lastName(_lastName) {
+    if (typeof(_lastName) !== "String") {
+      this._lastName = String(this.lastName)
     }else{
-      this.lastName= lastName;
+      this._lastName= lastName;
     }
   };
   get lastName() {
@@ -39,7 +39,7 @@ class Person {
     };
   };
   get _age(){
-    return this._age
+    return this.age
   };
   get fullName() {
     return this.firstName + ' ' + this.lastName

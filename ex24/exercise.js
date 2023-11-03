@@ -1,8 +1,9 @@
-let newNumber = [3];
-let numberStore = [0, 1, 2,...newNumber];
+const person = {
+  id: 1,
+  name: 'Mario',
+  surname: 'Rossi',
+  old: 25
+};
 
-// numberStore.push(newNumber);
-// function makeNewArray(newNumber){
-//  return [...newNumber,numberStore];
-// }
-console.log(numberStore);
+const { id, name, surname, old } = person;
+console.log(id, name, surname, old);

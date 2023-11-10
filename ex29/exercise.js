@@ -6,8 +6,8 @@ class Person {
     this.age = age;
   }
   
-  static fromJson(Person){
-    return JSON.parse(Person)
+  static fromJson(person){
+    return JSON.parse(person)
   } 
   toJson() {
     return JSON.stringify(this);

@@ -1,7 +1,5 @@
-function isAdult(person) {
-  if(person.age>=18){
-   console.log(person)
-  }
+function isAdult({age}) {
+  return age>=18
 }
 
 const person = {

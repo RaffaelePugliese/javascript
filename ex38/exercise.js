@@ -19,15 +19,13 @@ let checkId = (isLogged)=>{
 }
 
 let userId = ({name , age})=>{
-    throw new Error('some new error')
  return {name,age}
 
 }
 
+
 promise(isLogged)
-.then(checkId)
-.then(userId)
-.then((name,age)=>console.log(name,age))
-.then((val)=>console.log(val))
-.catch((err)=>console.error(err))
-.finally(console.log('finally'))
+  .then(checkId)
+  .then((response) => console.log(response))
+  .catch((err) => console.error(err))
+  .finally(() => console.log("Complete"));

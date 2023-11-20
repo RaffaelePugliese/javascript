@@ -12,7 +12,7 @@
 
 // -Crea una variabile chiamata success con un valore numerico random da 0 a 0.5
 
-// -La chiamata avrà successo con il messaggio Data retrieved successfully se il valore random è inferiore a 0.5 
+// -La chiamata avrà successo con il messaggio Data retrieved successfully se il valore random è inferiore a 0.5
 // altrimenti fallisce con il messaggio Error: Failed to fetch data
 
 // function rescueData(){
@@ -31,8 +31,8 @@
 // .then((result)=>console.log(result))
 // .catch((result)=>console.log(result))
 // Crea una catena di Promises per simulare un'operazione asincrona in più fasi.
-//  -La prima Promise recupera i dati dell'utente { id: 1, name: 'John' }. 
-//  -La seconda Promise recupera i post dell'utente ['Post 1', 'Post 2', 'Post 3']. 
+//  -La prima Promise recupera i dati dell'utente { id: 1, name: 'John' }.
+//  -La seconda Promise recupera i post dell'utente ['Post 1', 'Post 2', 'Post 3'].
 // -Infine, chiama le funzioni per recuperare e stampare in console il nome dell'utente e i titoli dei post.
 
 //  let promise=()=>{
@@ -63,10 +63,10 @@ async function getData() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await response.json();
   // console.log(data);
-  data.forEach(element=> {h2.innerHTML = element.title}) 
+  data.forEach(element=> {h2.innerHTML = element.title})
 }
 getData();
-// </script>} */
+</script>} */
 // async function postData(event) {
 //     event.preventDefault();
 //     const text = document.querySelector("#todo-title").value;

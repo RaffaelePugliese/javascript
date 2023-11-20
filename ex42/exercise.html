@@ -12,11 +12,16 @@
   name: "John",
   age: 25,
 };
-
-
 let obj = JSON.stringify(user);
 
 localStorage.setItem("user",obj);
-    </script>
+function recoverLocalStorageData() {
+
+  const data = JSON.parse(localStorage.getItem('user'));
+
+ 
+  console.log(data);
+};
+    </script>;
 </body>
 </html>

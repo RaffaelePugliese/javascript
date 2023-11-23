@@ -6,10 +6,11 @@ const user = {
 let obj = JSON.stringify(user);
 
 localStorage.setItem("user",obj);
-function recoverLocalStorageData() {
 
-  const data = JSON.parse(localStorage.getItem('user'));
+console.log(obj)
 
- 
-  console.log(data);
-}
+const data = JSON.parse(user)
+
+localStorage.getItem("user",data);
+
+console.log(data)
